@@ -23,19 +23,22 @@
 <body>
 
     <!-- header begins here -->
-    <header class="text-reddish bg-creamish sticky top-0 z-50 shadow-sm">
-        <div class="container mx-auto my-0 flex flex-wrap p-5 flex-row md:flex-row items-center">
+    <header class="relative text-reddish bg-creamish top-0 z-50 shadow-sm">
+
+        <div class="container mx-auto my-0 flex p-5 flex-row md:flex-row items-center">
 
             <!-- name and logo on navbar -->
-    
-            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <img src="img/egg_seller-removebg-logo.png" alt="icon" height="70px" width="70px">
-                <span class="ml-3 text-3xl font-extrabold">Kuku Shop</span>
-            </a>
+            <div>
+                <a class="flex items-center text-gray-900 mb-4 md:mb-0">
+                    <img src="img/egg_seller-removebg-logo.png" alt="icon" height="70px" width="70px">
+                    <span class="ml-3 text-3xl font-extrabold">Kuku Shop</span>
+                </a>
+            </div>    
+            
 
             <!-- navigation links -->
             
-            <nav class="flex flex-wrap items-center text-base justify-center md:ml-auto md:mr-auto">
+            <nav class="hidden md:flex flex-wrap items-center text-base justify-center md:ml-auto md:mr-auto">
             <a href="#Home" class="mr-5 text-xl px-4 py-2 rounded-full hover:bg-greyish">Home</a>
             <a href="#Products" class="mr-5 text-xl px-4 py-2 rounded-full hover:bg-greyish">Our Products</a>
             <a href="#Contact" class="mr-5 text-xl px-4 py-2 rounded-full hover:bg-greyish">Contact Us</a>
@@ -43,19 +46,43 @@
             </nav>
 
             <!-- cart button -->
-             <div class="relative">
-                <button class="inline-flex items-center border-0 py-3 px-3 focus:outline-none  rounded text-base font-semibold mt-4 md:mt-0">
+            <div class="relative ml-auto md:-mt-1">
+            <button class="inline-flex items-center border-0 py-3 px-3 focus:outline-none  rounded text-base font-semibold mt-4 md:mt-0">
                 <i class="fa-solid fa-cart-shopping fa-xl" style="color: #b22020;"></i>
             </button>
 
             <!-- dot badge -->
-            <span class="absolute top-0 right-0 inline-flex items-center justify-center w-3 h-3 bg-darkBrownish text-white text-xs font-bold rounded-full -mr-0 -mt-1.5"></span>
+            <!-- <span class="absolute top-0 right-1 items-center justify-center w-3 h-3 bg-darkBrownish text-white text-xs font-bold rounded-full -mr-0 -mt-1.5"></span> -->
 
-             </div>
+            </div>
+            <!-- cart button ends here -->
+
+
+            <!-- humburger icon -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+
+            </button>
+            <!-- humburger icon ends -->
             
 
 
         </div>
+
+        <!-- mobile menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex flex-col items-center md:hidden self-end  py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="#Home" class="mr-5 text-xl px-4 py-2 rounded-full ">Home</a>
+                    <a href="#Products" class="mr-5 text-xl px-4 py-2 rounded-full ">Our Products</a>
+                    <a href="#Contact" class="mr-5 text-xl px-4 py-2 rounded-full ">Contact Us</a>
+                    <a href="#Blog" class="mr-5 text-xl px-4 py-2 rounded-full ">Blog</a>
+
+            </div>
+        </div>
+
+        <!-- mobile menu ends -->
+
+
+
         </header>
     <!-- header ends here -->
 
