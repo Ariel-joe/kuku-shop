@@ -12,11 +12,11 @@ module.exports = {
       },
 
       fontFamily: {
-        'mont-font': ['Montserrat', 'Arial', 'sans-serif'], // Make sure this matches your custom font name
+        'mont-font': ['Montserrat', 'Arial', 'sans-serif'],
       },
 
       height: {
-        '120': '30rem', // Add this line for 30rem or 480px height
+        '120': '30rem', // or 480px
         '140': '35rem',
       },
     },
