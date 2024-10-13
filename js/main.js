@@ -1,6 +1,9 @@
-const menuButton = document.getElementById('menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
+    const menuButton = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('menu');
     
+
     menuButton.addEventListener('click', () => {
-        mobileMenu.style.display = mobileMenu.style.display === 'none' || mobileMenu.style.display === '' ? 'block' : 'none';
-    });
+        menuButton.classList.toggle('open');
+        mobileMenu.classList.toggle('flex');
+        mobileMenu.classList.toggle('hidden');
+    })

@@ -23,15 +23,15 @@
 <body>
 
     <!-- header begins here -->
-    <header class="relative text-reddish bg-creamish top-0 z-50 shadow-sm">
+    <header class="relative text-reddish bg-creamish top-0 z-50 shadow-sm" style="position: sticky;">
 
         <div class="container mx-auto my-0 flex p-5 flex-row md:flex-row items-center">
 
             <!-- name and logo on navbar -->
-            <div>
+            <div class="mt-3">
                 <a class="flex items-center text-gray-900 mb-4 md:mb-0">
                     <img src="img/egg_seller-removebg-logo.png" alt="icon" height="70px" width="70px">
-                    <span class="ml-3 text-3xl font-extrabold">Kuku Shop</span>
+                    <span class="ml-3 text-3xl font-extrabold ">Kuku Shop</span>
                 </a>
             </div>    
             
@@ -46,8 +46,8 @@
             </nav>
 
             <!-- cart button -->
-            <div class="relative ml-auto md:-mt-1">
-            <button class="inline-flex items-center border-0 py-3 px-3 focus:outline-none  rounded text-base font-semibold mt-4 md:mt-0">
+            <div class="relative ml-auto pr-2">
+            <button class="inline-flex items-center border-0 py-3 px-3 focus:outline-none  rounded text-base font-semibold md:mt-0">
                 <i class="fa-solid fa-cart-shopping fa-xl" style="color: #b22020;"></i>
             </button>
 
@@ -60,7 +60,7 @@
 
             <!-- humburger icon -->
             <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-
+                <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
             </button>
             <!-- humburger icon ends -->
             
@@ -70,7 +70,7 @@
 
         <!-- mobile menu -->
         <div class="md:hidden">
-            <div id="menu" class="absolute flex flex-col items-center md:hidden self-end  py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+            <div id="menu" class="hidden absolute flex-col items-center md:hidden py-8 mt-10 space-y-6 font-bold bg-white sm:self-center left-6 right-6 drop-shadow-md">
                     <a href="#Home" class="mr-5 text-xl px-4 py-2 rounded-full ">Home</a>
                     <a href="#Products" class="mr-5 text-xl px-4 py-2 rounded-full ">Our Products</a>
                     <a href="#Contact" class="mr-5 text-xl px-4 py-2 rounded-full ">Contact Us</a>
@@ -503,7 +503,8 @@
 
 
     
+    <!-- scripts -->
     
-    
+    <script src="js/main.js"></script>
 </body>
 </html>
